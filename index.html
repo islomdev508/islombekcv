@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Full Screen</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden; /* Ekran skroll bo'lmasligi uchun */
+        }
+
+        .full-screen-img {
+            width: 100vw;  /* Ekran kengligi bo'yicha */
+            height: 100vh; /* Ekran balandligi bo'yicha */
+            object-fit: contain; /* Rasmni buzmasdan (proporsiyasini saqlab) ekranga sig'diradi */
+            display: block;
+            background-color: #f0f0f0; /* Rasm atrofidagi bo'sh joy rangi (ixtiyoriy) */
+        }
+    </style>
+</head>
+<body>
+
+    <img src="resume.pdf.png" alt="Resume" class="full-screen-img">
+
+</body>
+</html>
